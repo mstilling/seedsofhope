@@ -1,0 +1,29 @@
+header {
+  z-index: 100;
+
+  //Desktop Logo
+  #logoDesktop{
+    position: absolute;
+    top: 43px;
+    left: 40px;
+    svg {width: 320px; fill: $bodyBG;}
+    @media screen and (max-width: 580px) {display: none;}
+  }
+
+  //Mobile Logo
+  #logoMobile {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    svg { width: 160px; fill: $bodyBG;}
+    @media screen and (max-width: 580px) {display: block;}
+  }
+
+  form {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    @media screen and (max-width: 580px) {top: 33px; right: 24px;}
+  }
+}

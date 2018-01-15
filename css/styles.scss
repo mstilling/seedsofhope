@@ -1,0 +1,379 @@
+$primary: #01543E; //dark green
+$secondary: #4ECDC4; //teal
+$linkOne: #FFE66D; //yellow
+$linkTwo: #FF6B6B; //red
+$bodyText: gray;
+$bodyBG: white;
+$gradient: linear-gradient(45deg, $secondary, $linkOne);
+
+@import "./partials/textStyles";
+@import "./partials/header";
+@import "./partials/btn";
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.one {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: $gradient, url("../assets/img/plantingHero.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+
+  .text {
+    h1 {
+      text-align: center;
+      color: $bodyBG;
+    }
+
+    .underline {
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 2px;
+      background-color: white;
+    }
+  }
+
+  #mouseIcon {
+    height: 48px;
+    position: absolute;
+    bottom: 20px;
+
+    #scroll {
+      animation: 1000ms ease 0s infinite alternate mouseIcon;
+    }
+  }
+}
+
+//scroll animation
+@keyframes mouseIcon {
+  0% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(7px);
+  }
+}
+
+.two {
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  /*background: $gradient, url('../assets/img/flowersBlur.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: bottom;*/
+
+  .text {
+    width: 550px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 590px) {width: 300px;}
+
+    h2 {
+      display: inline;
+      color: $bodyBG;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $bodyBG;
+    }
+
+    h5 {
+      color: $bodyBG;
+    }
+  }
+}
+
+.three {
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .text {
+    width: 550px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 590px) {width: 300px;}
+
+    h2 {
+      display: inline;
+      color: $primary;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $primary;
+    }
+
+    h5 {
+      color: $bodyText;
+    }
+
+    p {
+      color: $primary;
+      margin-top: 20px;
+    }
+
+    #activityList {
+      display: flex;
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (max-width: 590px) {width: 300px;}
+
+      li {
+        font-size: .8rem;
+        line-height: 2;
+        color: $bodyText;
+      }
+    }
+  }
+}
+
+.four {
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $secondary;
+
+  .text {
+    width: 540px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 590px) {width: 300px;}
+
+    h2 {
+      display: inline;
+      color: $bodyBG;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $bodyBG;
+    }
+
+    p {
+      color: $bodyBG;
+    }
+  }
+}
+
+.five {
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 60px;
+
+
+  .text {
+    width: 550px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 590px) {width: 300px;}
+
+    h2 {
+      display: inline;
+      color: $primary;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $primary;
+    }
+
+    p {
+      color: $bodyText;
+    }
+  }
+}
+
+.six {
+  overflow: hidden;
+  width: 100%;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: $gradient, url("../assets/img/appleTree.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: bottom;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+      color: $bodyBG;
+    }
+
+    .underline {
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 2px;
+      background-color: white;
+    }
+  }
+}
+
+.seven {
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 60px;
+
+  .text {
+    width: 550px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 590px) {width: 300px;}
+
+    h2 {
+      display: inline;
+      color: $primary;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $primary;
+    }
+
+    p {
+      color: $bodyText;
+    }
+
+    h4 {
+      margin: 20px auto;
+      text-align: center;
+      color: $secondary;
+    }
+  }
+  #contactIcons {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 590px) {width: 300px; flex-direction: column;}
+
+    i {
+      font-size: 1.3rem;
+      display: block;
+      margin-right: 10px;
+    }
+
+    ul {
+      width: 225px;
+      list-style: none;
+      color: $primary;
+      line-height: 4;
+      text-transform: uppercase;
+      font-size: .7rem;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: $primary;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: $primary;
+  @media screen and (max-width: 590px) {height: 40vh;}
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    position: relative;
+    bottom: 5px;
+    margin: 10px auto;
+  }
+
+  .btn#backToTop {
+    position: relative;
+    bottom: -5px;
+    margin: 10px auto;
+  }
+
+  #logoHorz {
+    fill: $bodyBG;
+    margin-top: 20px;
+    width: 240px;
+  }
+
+  p {
+    color: $bodyBG;
+    margin-top: 5px;
+  }
+
+  #legal {
+    font-size: .6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
