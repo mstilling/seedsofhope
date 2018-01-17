@@ -123,7 +123,6 @@ header {
 body {
   margin: 0;
   padding: 0;
-  height: 200vh;
   font-family: 'Raleway', sans-serif; }
 
 .one {
@@ -166,6 +165,9 @@ body {
     .one #mouseIcon #scroll {
       -webkit-animation: 1000ms ease 0s infinite alternate mouseIcon;
       animation: 1000ms ease 0s infinite alternate mouseIcon; }
+  .one #homeBtn {
+    position: relative;
+    top: 20px; }
 
 @-webkit-keyframes mouseIcon {
   0% {
@@ -199,11 +201,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #01543E;
-  /*background: $gradient, url('../assets/img/flowersBlur.jpg');
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: bottom;*/ }
+  background-color: #01543E; }
   .two .text {
     width: 550px;
     margin-top: 60px;
@@ -248,7 +246,7 @@ body {
   align-items: center; }
   .three .text {
     width: 550px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -518,7 +516,15 @@ body {
       align-items: center; }
       .seven #contactIcons li a {
         text-decoration: none;
-        color: #01543E; }
+        color: #01543E;
+        -webkit-transition: color 300ms ease;
+        -o-transition: color 300ms ease;
+        transition: color 300ms ease; }
+        .seven #contactIcons li a:hover {
+          color: #4ECDC4;
+          -webkit-transition: color 300ms ease;
+          -o-transition: color 300ms ease;
+          transition: color 300ms ease; }
 
 footer {
   width: 100%;
